@@ -1,0 +1,139 @@
+<div class="elearning-welcome">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .elearning-welcome {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      color: #000;
+    }
+    .elearning-welcome h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    .elearning-welcome p {
+      margin-bottom: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .elearning-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .elearning-card {
+      border-radius: 14px;
+      padding: 12px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,.08);
+      text-decoration: none !important;
+      transition: transform .18s ease, border-color .18s ease, color .18s ease, background-color .18s ease;
+    }
+    /* Warna card */
+    .elearning-card:nth-child(1) { background: #364fc7; }
+    .elearning-card:nth-child(2) { background: #2b9fcf; }
+    .elearning-card:nth-child(3) { background: #4ea77a; }
+    .elearning-card:nth-child(4) { background: #d97b35; }
+
+    /* Hover: warna teks senada */
+    .elearning-card:nth-child(1):hover { color: #cdd6f4; background-color: #2f44a3; }
+    .elearning-card:nth-child(2):hover { color: #d0f0f9; background-color: #2486aa; }
+    .elearning-card:nth-child(3):hover { color: #d8f3dc; background-color: #3e8864; }
+    .elearning-card:nth-child(4):hover { color: #ffe8d6; background-color: #b96b2c; }
+
+    .elearning-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255,255,255,.25);
+    }
+    .elearning-card i {
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+    }
+    .elearning-card-title {
+      font-weight: bold;
+      margin-bottom: 3px;
+      font-size: 0.95rem;
+    }
+    .elearning-card-desc {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.85);
+    }
+
+    /* Tablet */
+    @media (max-width: 768px) {
+      .elearning-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+    }
+
+    /* Mobile kecil - mode horizontal */
+    @media (max-width: 480px) {
+      .elearning-cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .elearning-card {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 10px;
+      }
+      .elearning-card i {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
+      .elearning-card-title {
+        font-size: 0.9rem;
+        margin-bottom: 2px;
+      }
+      .elearning-card-desc {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+
+  <h2>Selamat Datang di Platform E-Learning Kami</h2>
+  <p>Selamat datang di ruang belajar digital yang dirancang untuk mendukung perjalanan Anda menuju pengetahuan dan keterampilan baru.  
+  Di sini, Anda dapat mengakses materi pembelajaran kapan saja dan di mana saja, berinteraksi dengan pengajar maupun sesama peserta, serta mengembangkan diri secara mandiri.</p>
+  <p>Mari manfaatkan setiap fitur yang tersedia, ikuti aktivitas pembelajaran dengan semangat, dan jadikan platform ini sebagai jembatan menuju pencapaian terbaik Anda.  
+  <strong>Happy learning and growing together! 🌱📚</strong></p>
+
+  <div class="elearning-cards">
+    <a href="/my/courses.php" class="elearning-card">
+      <i class="fa-solid fa-book-open"></i>
+      <div>
+        <div class="elearning-card-title">Courses</div>
+        <div class="elearning-card-desc">Browse and continue your learning</div>
+      </div>
+    </a>
+    <a href="/user/profile.php" class="elearning-card">
+      <i class="fa-solid fa-user-circle"></i>
+      <div>
+        <div class="elearning-card-title">Profile</div>
+        <div class="elearning-card-desc">Update your info and avatar</div>
+      </div>
+    </a>
+    <a href="/grade/report/overview/index.php" class="elearning-card">
+      <i class="fa-solid fa-chart-line"></i>
+      <div>
+        <div class="elearning-card-title">Grades</div>
+        <div class="elearning-card-desc">Check your progress</div>
+      </div>
+    </a>
+    <a href="/user/preferences.php" class="elearning-card">
+      <i class="fa-solid fa-cog"></i>
+      <div>
+        <div class="elearning-card-title">Preferences</div>
+        <div class="elearning-card-desc">Customize notifications & theme</div>
+      </div>
+    </a>
+  </div>
+</div>
