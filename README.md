@@ -23,6 +23,7 @@ Bukan sekadar teks sambutan biasa — pesan ini terhubung langsung dengan **Cour
 - Menambah kesan profesional dan ramah pada tampilan course.
 
 ## 🛠 Cara Menggunakan
- **Clone repositori ini**
-   ```bash
-   git clone https://github.com/muhawaluddin/welcome-moodle 
+ - Tambahkan pada halaman course
+ - Turn editing On > Add an activity or resources > label / text / page (disesuikan saja dengan kebutuhan Anda)
+ - Pada page editor > pilih HTML > paste html + css
+ - Selamat mencoba !
